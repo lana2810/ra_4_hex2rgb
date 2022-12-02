@@ -1,5 +1,6 @@
 function convertor(value) {
   if (value.length < 7) return "";
+  if (value.length > 7) return "error!!!";
   const formattedValue = value.slice(1, 7);
 
   const red = parseInt(formattedValue.slice(0, 2), 16);
